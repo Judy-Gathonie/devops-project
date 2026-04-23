@@ -1,4 +1,4 @@
-# 🚀 End-to-End DevOps CI/CD Pipeline Project
+  complete DevOps CI/CD Pipeline Project
 
 A complete **hands-on DevOps project** demonstrating how to build, containerize, automate, and deploy a Node.js application using modern DevOps tools.
 
