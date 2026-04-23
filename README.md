@@ -10,4 +10,6 @@ This project covers the full lifecycle:
 
 # 📌 Architecture Overview
 
-<img width="560" height="1022" alt="image" src="https://github.com/user-attachments/assets/d9ca7d48-9334-433f-8238-44ce8640a4a1" />
+
+
+<img width="560" height="1022" alt="image" src="https://github.com/user-attachments/assets/f0afc84c-2aa2-425b-88c6-f0a081e5ec52" />
