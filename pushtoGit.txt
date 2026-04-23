@@ -135,7 +135,7 @@ jobs:
 Push again:
 
 git add .
-git commit -m "Add CI pipeline"
+git commit -m "final draft"
 git push
 
 👉 Go to GitHub → Actions tab → see pipeline running 🎉
