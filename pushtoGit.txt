@@ -2,9 +2,9 @@ DevOps Project: From Scratch (Hands-On Guide)
 
 We’ll build:
 
-👉 A simple app → Dockerize → Push to GitHub → Automate with CI/CD → Deploy on Kubernetes
+ A simple app → Dockerize → Push to GitHub → Automate with CI/CD → Deploy on Kubernetes
 
-🧱 STEP 0: Prerequisites
+ STEP 0: Prerequisites
 
 Install these first:
 
@@ -21,14 +21,14 @@ git --version
 docker --version
 node -v
 kubectl version --client
-📁 STEP 1: Create Project Folder
+STEP 1: Create Project Folder
 mkdir devops-project
 cd devops-project
 
 Initialize git:
 
 git init
-🌐 STEP 2: Build Simple Node.js App
+STEP 2: Build Simple Node.js App
 
 Create file:
 
@@ -61,9 +61,9 @@ Run locally:
 node app.js
 
 Open browser:
-👉 http://localhost:3000/hello
+ http://localhost:3000/hello
 
-🐳 STEP 3: Dockerize the App
+STEP 3: Dockerize the App
 
 Create Dockerfile:
 
@@ -84,9 +84,9 @@ Run container:
 docker run -p 3000:3000 devops-app
 
 Test again:
-👉 http://localhost:3000/hello
+ http://localhost:3000/hello
 
-☁️ STEP 4: Push to GitHub
+ STEP 4: Push to GitHub
 
 Go to GitHub and create a repo.
 
@@ -97,7 +97,7 @@ git commit -m "initial commit"
 git branch -M main
 git remote add origin https://github.com/YOUR_USERNAME/devops-project.git
 git push -u origin main
-⚙️ STEP 5: Setup CI/CD Pipeline
+STEP 5: Setup CI/CD Pipeline
 
 Create folder:
 
@@ -138,14 +138,14 @@ git add .
 git commit -m "final draft"
 git push
 
-👉 Go to GitHub → Actions tab → see pipeline running 🎉
+Go to GitHub → Actions tab → see pipeline running 🎉
 
-☸️ STEP 6: Setup Kubernetes (Minikube)
+STEP 6: Setup Kubernetes (Minikube)
 
 Start cluster:
 
 minikube start
-📦 STEP 7: Create Kubernetes Deployment
+STEP 7: Create Kubernetes Deployment
 
 Create file:
 
@@ -190,7 +190,7 @@ spec:
     - port: 80
       targetPort: 3000
       nodePort: 30007
-▶️ STEP 9: Deploy to Kubernetes
+STEP 9: Deploy to Kubernetes
 kubectl apply -f deployment.yaml
 kubectl apply -f service.yaml
 
@@ -198,12 +198,12 @@ Check:
 
 kubectl get pods
 kubectl get services
-🌐 STEP 10: Access Your App
+ STEP 10: Access Your App
 minikube service devops-service
 
 Browser opens 🎉
 
-✅ FINAL RESULT
+FINAL RESULT
 
 You now have:
 
